@@ -1,0 +1,4 @@
+repo: https://github.com/waruingugi/flask_tutorial.git
+    rev: ''  # pick a git hash / tag to point to
+    hooks:
+    -   id: flake8
