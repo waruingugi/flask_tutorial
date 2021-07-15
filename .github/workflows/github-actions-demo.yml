@@ -18,5 +18,7 @@ jobs:
       - name: Install packages in requirements file
         run: pip install -r requirements.txt
       - name: Run flake8 to check if code conforms to PEP8 code style.
-        run: flake8
+        uses: suo/flake8-github-action@releases/v1
+        with:
+          checkName: 'Explore-GitHub-Actions'
       - run: echo "🍏 This job's status is ${{ job.status }}."
